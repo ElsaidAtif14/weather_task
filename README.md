@@ -1,47 +1,97 @@
 # 🌤️ Weather App - Clean Architecture & BLoC
 
-A modern, robust, and clean **Flutter Weather Application** built following **Clean Architecture** principles and **BLoC/Cubit** state management pattern.
+A modern Flutter weather application built with Clean Architecture and `flutter_bloc` state management.
 
 ---
 
 ## ✨ Features
 
-- 📍 **Real-time Weather Data**: Fetch accurate live weather conditions by location/city query.
-- 🎨 **Clean & Modular UI**: Well-structured widgets (`WeatherCard`, `WeatherStatCard`, `WeatherStatsGrid`, etc.).
-- 🔄 **State Management**: Scalable architecture using **BLoC / Cubit**.
-- 📡 **API Integration**: RESTful API integration using `Dio` / `ApiConsumer` with custom error handling.
-- 💾 **Local Caching**: Offline-first support with cache helpers.
-- 🌐 **Network Monitoring**: Built-in connection check for Web and Mobile platforms.
-- 💉 **Dependency Injection**: Clean setup using `get_it` service locator (`injection_container.dart`).
+- 📍 Real-time weather data by location or city search
+- 🎨 Clean, modular UI components
+- 🔄 BLoC/Cubit state management
+- 📡 API integration using `dio`
+- 💾 Local caching support
+- 🌐 Network connectivity monitoring
+- 💉 Dependency injection with `get_it`
 
 ---
 
 ## 🏗️ Project Architecture
 
-This project strictly adheres to **Clean Architecture** with layer separation:
+This app follows Clean Architecture principles with separated layers:
 
 ```text
 lib/
 ├── core/
-│   ├── connection/            # Network info & status checkers (IO/Web)
+│   ├── connection/            # Network info & connection status
 │   ├── databases/
-│   │   ├── api/               # Dio Consumer, Endpoints
-│   │   └── cache/             # Cache Helper
-│   ├── errors/                # Failures, Exceptions & Error Models
-│   ├── helper/                # UI Helpers (Lottie animations, Feels Like calculator)
-│   └── services/              # Location & Custom Bloc Observer
-│
+│   │   ├── api/               # API consumer, endpoints
+│   │   └── cache/             # Cache helper
+│   ├── errors/                # Failures, exceptions, error models
+│   ├── helper/                # UI helpers and utilities
+│   └── services/              # Location and other services
 ├── data/
-│   ├── datasources/           # Remote & Local data sources
-│   ├── models/                # Weather, Location, Condition models
+│   ├── datasources/           # Remote and local data sources
+│   ├── models/                # Data models
 │   └── repositories/          # Repository implementations
-│
 ├── domain/
-│   ├── entities/              # Core domain entities
-│   ├── repositories/          # Abstract repositories
-│   └── usecases/              # Business logic use cases (e.g. GetWeather)
-│
+│   ├── entities/              # Domain entities
+│   ├── repositories/          # Abstract repository contracts
+│   └── usecases/              # Business logic use cases
 └── presentation/
     └── home/
-        ├── cubit/             # WeatherCubit & WeatherState
-        └── views/             # HomeView, Custom TextFields, Weather Cards
+        ├── cubit/             # Weather cubit and states
+        └── views/             # UI screens and widgets
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- Language: Dart
+- Framework: Flutter
+- State management: `flutter_bloc`
+- Dependency injection: `get_it`
+- Networking: `dio`
+- Animations: `lottie`
+- Local storage: `shared_preferences`
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK
+- Dart SDK
+- IDE: VS Code or Android Studio
+
+### Install
+
+```bash
+git clone https://github.com/ElsaidAtif14/weather_task.git
+cd weather_task
+flutter pub get
+```
+
+### Configure API Key
+
+Update `lib/core/databases/api/end_points.dart` with your weather API key.
+
+### Run the app
+
+```bash
+flutter run
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+---
+
+## 📝 License
+
+This project is distributed under the MIT License. See `LICENSE` for details.
