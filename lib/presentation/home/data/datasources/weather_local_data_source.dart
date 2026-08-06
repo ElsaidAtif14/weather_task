@@ -6,7 +6,7 @@ import 'package:weather/presentation/home/data/models/weather_model.dart';
 
 abstract class WeatherLocalDataSource {
   Future<WeatherModel> getLastWeather();
-  Future<void> cacheWeather(WeatherModel weatherToCache);
+  Future<void> cacheWeather(WeatherModel cachedWeather);
 }
 
 class WeatherLocalDataSourceImpl implements WeatherLocalDataSource {
@@ -16,8 +16,8 @@ class WeatherLocalDataSourceImpl implements WeatherLocalDataSource {
   WeatherLocalDataSourceImpl({required this.cacheHelper});
 
   @override
-  Future<void> cacheWeather(WeatherModel weatherToCache) async {
-    final jsonString = jsonEncode(weatherToCache.toJson());
+  Future<void> cacheWeather(WeatherModel cachedWeather) async {
+    final jsonString = jsonEncode(cachedWeather.toJson());
     await cacheHelper.saveData(key: cachedWeatherKey, value: jsonString);
   }
 
