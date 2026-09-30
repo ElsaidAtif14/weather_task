@@ -1,6 +1,6 @@
-import 'package:weather/presentation/home/domain/entities/weather.dart';
-import 'package:weather/presentation/home/data/models/current_weather_model.dart';
-import 'package:weather/presentation/home/data/models/location_model.dart';
+import 'package:weather/features/home/domain/entities/weather.dart';
+import 'package:weather/features/home/data/models/current_weather_model.dart';
+import 'package:weather/features/home/data/models/location_model.dart';
 
 class WeatherModel extends WeatherEntity {
   const WeatherModel({

@@ -1,6 +1,6 @@
 import 'package:weather/core/databases/api/api_consumer.dart';
 import 'package:weather/core/databases/api/end_points.dart';
-import 'package:weather/presentation/home/data/models/weather_model.dart';
+import 'package:weather/features/home/data/models/weather_model.dart';
 
 abstract class WeatherRemoteDataSource {
   Future<WeatherModel> getCurrentWeather(String query);

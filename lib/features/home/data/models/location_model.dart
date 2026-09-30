@@ -1,4 +1,4 @@
-import 'package:weather/presentation/home/domain/entities/location.dart';
+import 'package:weather/features/home/domain/entities/location.dart';
 
 class LocationModel extends LocationEntity {
   const LocationModel({

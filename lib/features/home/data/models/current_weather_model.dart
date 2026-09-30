@@ -1,5 +1,5 @@
-import 'package:weather/presentation/home/domain/entities/current_weather.dart';
-import 'package:weather/presentation/home/data/models/condition_model.dart';
+import 'package:weather/features/home/domain/entities/current_weather.dart';
+import 'package:weather/features/home/data/models/condition_model.dart';
 
 class CurrentWeatherModel extends CurrentWeatherEntity {
   const CurrentWeatherModel({

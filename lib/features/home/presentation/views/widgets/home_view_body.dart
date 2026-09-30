@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:skeletonizer/skeletonizer.dart';
-import 'package:weather/presentation/home/cubit/weather_cubit.dart';
-import 'package:weather/presentation/home/cubit/weather_state.dart';
+import 'package:weather/features/home/presentation/cubit/weather_cubit.dart';
+import 'package:weather/features/home/presentation/cubit/weather_state.dart';
 import 'weather_card.dart';
 import 'weather_stats_grid.dart';
 

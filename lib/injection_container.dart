@@ -6,11 +6,11 @@ import 'package:weather/core/databases/api/api_consumer.dart';
 import 'package:weather/core/databases/api/dio_consumer.dart';
 import 'package:weather/core/databases/cache/cache_helper.dart';
 import 'package:weather/core/services/location_service.dart';
-import 'package:weather/presentation/home/cubit/weather_cubit.dart';
-import 'package:weather/presentation/home/data/datasources/weather_local_data_source.dart';
-import 'package:weather/presentation/home/data/datasources/weather_remote_data_source.dart';
-import 'package:weather/presentation/home/data/repositories/weather_repository_impl.dart';
-import 'package:weather/presentation/home/domain/usecases/get_weather_usecase.dart';
+import 'package:weather/features/home/presentation/cubit/weather_cubit.dart';
+import 'package:weather/features/home/data/datasources/weather_local_data_source.dart';
+import 'package:weather/features/home/data/datasources/weather_remote_data_source.dart';
+import 'package:weather/features/home/data/repositories/weather_repository_impl.dart';
+import 'package:weather/features/home/domain/usecases/get_weather_usecase.dart';
 
 final sl = GetIt.instance;
 

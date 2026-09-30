@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:weather/core/databases/cache/cache_helper.dart';
 import 'package:weather/core/errors/expentions.dart';
-import 'package:weather/presentation/home/data/models/weather_model.dart';
+import 'package:weather/features/home/data/models/weather_model.dart';
 
 abstract class WeatherLocalDataSource {
   Future<WeatherModel> getLastWeather();

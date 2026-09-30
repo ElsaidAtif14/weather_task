@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:weather/core/connection/network_info.dart';
 import 'package:weather/core/errors/failure.dart';
 import 'package:weather/core/errors/expentions.dart';
-import 'package:weather/presentation/home/data/datasources/weather_local_data_source.dart';
-import 'package:weather/presentation/home/data/datasources/weather_remote_data_source.dart';
-import 'package:weather/presentation/home/domain/entities/weather.dart';
-import 'package:weather/presentation/home/domain/repositories/weather_repository.dart';
+import 'package:weather/features/home/data/datasources/weather_local_data_source.dart';
+import 'package:weather/features/home/data/datasources/weather_remote_data_source.dart';
+import 'package:weather/features/home/domain/entities/weather.dart';
+import 'package:weather/features/home/domain/repositories/weather_repository.dart';
 
 class WeatherRepositoryImpl implements WeatherRepository {
   final WeatherRemoteDataSource remoteDataSource;

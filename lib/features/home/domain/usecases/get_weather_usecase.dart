@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:weather/core/errors/failure.dart';
 import 'package:weather/core/services/location_service.dart';
-import 'package:weather/presentation/home/domain/entities/weather.dart';
-import 'package:weather/presentation/home/domain/repositories/weather_repository.dart';
+import 'package:weather/features/home/domain/entities/weather.dart';
+import 'package:weather/features/home/domain/repositories/weather_repository.dart';
 
 class WeatherParams {
   final String? cityName;

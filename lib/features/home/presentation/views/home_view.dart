@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weather/presentation/home/cubit/weather_cubit.dart';
-import 'package:weather/presentation/home/views/widgets/custom_text_field.dart';
-import 'package:weather/presentation/home/views/widgets/home_view_body.dart';
+import 'package:weather/features/home/presentation/cubit/weather_cubit.dart';
+import 'package:weather/features/home/presentation/views/widgets/custom_text_field.dart';
+import 'package:weather/features/home/presentation/views/widgets/home_view_body.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});

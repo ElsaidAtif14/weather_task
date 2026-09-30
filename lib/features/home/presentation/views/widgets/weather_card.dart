@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:weather/core/helper/get_feels.dart';
 import 'package:weather/core/helper/get_weather_lottie.dart';
-import 'package:weather/presentation/home/domain/entities/weather.dart';
-import 'package:weather/presentation/home/views/widgets/weather_image_placeholder.dart';
+import 'package:weather/features/home/domain/entities/weather.dart';
+import 'package:weather/features/home/presentation/views/widgets/weather_image_placeholder.dart';
 
 class WeatherCard extends StatelessWidget {
   final WeatherEntity? weather;

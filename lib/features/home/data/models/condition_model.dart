@@ -1,4 +1,4 @@
-import 'package:weather/presentation/home/domain/entities/condition.dart';
+import 'package:weather/features/home/domain/entities/condition.dart';
 
 class ConditionModel extends ConditionEntity {
   const ConditionModel({

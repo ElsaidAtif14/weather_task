@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather/presentation/home/domain/entities/current_weather.dart';
-import 'weather_stat_card.dart';
+import 'package:weather/features/home/domain/entities/current_weather.dart';
+import 'package:weather/features/home/presentation/views/widgets/weather_stat_card.dart';
 
 class WeatherStatsGrid extends StatelessWidget {
   final CurrentWeatherEntity? current;

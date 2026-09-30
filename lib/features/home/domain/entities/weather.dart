@@ -1,5 +1,5 @@
-import 'package:weather/presentation/home/domain/entities/current_weather.dart';
-import 'package:weather/presentation/home/domain/entities/location.dart';
+import 'package:weather/features/home/domain/entities/current_weather.dart';
+import 'package:weather/features/home/domain/entities/location.dart';
 
 class WeatherEntity {
   final LocationEntity location;

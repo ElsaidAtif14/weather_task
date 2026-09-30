@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather/injection_container.dart';
-import 'package:weather/presentation/home/cubit/weather_cubit.dart';
-import 'package:weather/presentation/home/views/home_view.dart';
+import 'package:weather/features/home/presentation/cubit/weather_cubit.dart';
+import 'package:weather/features/home/presentation/views/home_view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
